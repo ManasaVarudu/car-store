@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ravuri Poojitha</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link  rel="stylesheet" href="style.css">
+     <style>
+ 
+    #outer{width:90%;max-width:300px;background:#fff;margin:0 auto}
+#cover{border:2px solid #111;padding:15px 0}
+.main{table-layout:fixed;width:94%;border:0;border-collapse:collapse;margin:0 auto}
+.main td{padding:0 8px;vertical-align:middle;border:0}
+.main input{width:100%;border:1px solid #ccc;margin:2px 0;padding:0 2%;height:22px;text-align:right}.ac{text-align:center}.b{font-weight:bold}
+.main select{width:100%;border:1px solid #ccc;margin:2px 0;background:#fff;height:22px}.w50{width:50%}.main button{width:100%;font-weight:bold;margin:3px 0}</style>
+   
+  </style>
+</head>
+<body> 
+<div class="header">
+    
+    <div class="container">
+        
+    <nav id="main-nav" class="flex items-cen justify">
+        
+        <div class="left flex items-cen">
+            <a href="index.html" style="font-size:22px; font-weight: bold;" >Cars Dunia</a>
+         
+           <div>  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+               &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+               &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+               &nbsp;    &nbsp;    &nbsp;  
+               <a href="practice.html">Buy a Car</a>
+               <a href="sell.html">Sell Cars</a>
+               <a href="cart1.html">Buy Car Interiors</a>
+               <div class="dropdown">
+            <button class="dropbtn">MORE</button>
+        
+           <div class="dropdown-content">
+             <a href="calculator.html">EMI Calculator</a>
+             <a href="#">Car News</a>
+             <a href="#">Ask A Question</a>
+             <a href="memes.html">Write a review</a>
+             <a href="contact.html">Contact Us!!</a>
+             <a href="about.html">About Us!!</a>
+            
+           </div>
+           </div>
+           
+           <a href="userlogin.html">Login</a>
+           </div>     
+
+   </div>
+    </nav>
+    </div>
+    </div> 
+    
+        
+         
+       
+    </nav>
+    </div>
+    </div> 
+
+    <div id=outer><div class='ac b'><br>EMI Calculator<br></div><div id=cover><form><table class=main><col class=w50><col class=w50><tr><td>Loan Amount<td><input id=loan1><tr><td>Repayment in months<td><input id=months1><tr><td>Interest Rate<td><input id=rate1 onchange=emi();><tr><td><button type=reset>Reset</button><td><button type=button onclick='emi()'>Submit</button><tr><td>EMI<td><input id=pay1><tr><td>Interest payable<td><input id=tintt1><tr><td>Total payable<td><input id=gt1></table></form></div></div>
+    
+      <script>function emi(){if(document.getElementById('loan1').value==null || document.getElementById('loan1').value.length==0 || document.getElementById('months1').value==null || document.getElementById('months1').value.length==0 || document.getElementById('rate1').value==null || document.getElementById('rate1').value.length==0 ) {document.getElementById('pay1').value='Data Reqd.'}else {var pay1='';var princ1= document.getElementById('loan1').value;var term1= document.getElementById('months1').value;var intr1=document.getElementById('rate1').value / 1200;document.getElementById('pay1').value =Math.round(princ1 * intr1 / (1-(Math.pow(1/(1 + intr1), term1)))*100)/100; document.getElementById('gt1').value= Math.round((document.getElementById('pay1').value * document.getElementById('months1').value)*100)/100;document.getElementById('tintt1').value=Math.round((document.getElementById('gt1').value*1 - document.getElementById('loan1').value*1)*100)/100}}
+ 
+</script>
+    
+  </div>

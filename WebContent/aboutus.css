@@ -1,0 +1,45 @@
+
+.top{
+	height:500px;
+	margin-top:40px;
+	background-color:rgb(227, 230, 228);
+	
+}
+.main-image
+{
+	margin-left:100px;
+	margin-top:50px;
+	height:390px;
+	
+}
+.heading
+{
+	height:80px;
+	width:100%;
+	background-color:rgb(83, 145, 245);
+}
+h1
+{
+	color:white;
+	padding :15px;
+	
+}
+.image-1
+{
+	width:570px;
+	height:350px;
+	 margin-left:500px;
+	
+	
+}
+.para
+{
+	float:left;
+}
+
+p
+{
+	color:rgb(99, 98, 97);
+	font-size:17px;
+}
+
